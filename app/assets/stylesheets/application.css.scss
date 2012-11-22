@@ -10,16 +10,32 @@
  *
  *= require_self
  *= require_tree .
-*/
+ */
 
-.content {
-  background-color: #eee;
-  padding: 20px;
-  margin: 0 -20px; /* negative indent the amount of the padding to maintain the grid system */
-  -webkit-border-radius: 0 0 6px 6px;
-  -moz-border-radius: 0 0 6px 6px;
-  border-radius: 0 0 6px 6px;
-  -webkit-box-shadow: 0 1px 2px rgba(0,0,0,.15);
-  -moz-box-shadow: 0 1px 2px rgba(0,0,0,.15);
-  box-shadow: 0 1px 2px rgba(0,0,0,.15);
+@import "compass/css3";
+
+.item {
+  img {
+    margin:auto;
+  }
+}
+
+
+.jumbotron {
+position: relative;
+padding: 40px 0;
+color: white;
+text-align: center;
+text-shadow: 0 1px 3px rgba(0, 0, 0, .4), 0 0 30px rgba(0, 0, 0, .075);
+background: #020031;
+background: -moz-linear-gradient(45deg, #020031 0%, #6D3353 100%);
+background: -webkit-gradient(linear, left bottom, right top, color-stop(0%,#020031), color-stop(100%,#6D3353));
+background: -webkit-linear-gradient(45deg, #020031 0%,#6D3353 100%);
+background: -o-linear-gradient(45deg, #020031 0%,#6D3353 100%);
+background: -ms-linear-gradient(45deg, #020031 0%,#6D3353 100%);
+background: linear-gradient(45deg, #020031 0%,#6D3353 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#020031', endColorstr='#6d3353',GradientType=1 );
+-webkit-box-shadow: inset 0 3px 7px rgba(0, 0, 0, .2), inset 0 -3px 7px rgba(0, 0, 0, .2);
+-moz-box-shadow: inset 0 3px 7px rgba(0,0,0,.2), inset 0 -3px 7px rgba(0,0,0,.2);
+box-shadow: inset 0 3px 7px rgba(0, 0, 0, .2), inset 0 -3px 7px rgba(0, 0, 0, .2);
 }
