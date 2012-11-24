@@ -1,3 +1,67 @@
 // Place all the styles related to the home controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+@import "compass/css3";
+
+.item {
+  img {
+    margin:auto;
+  }
+}
+
+
+.jumbotron {
+  position: relative;
+  //padding: 40px 0;
+  color: white;
+  text-align: center;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, .4), 0 0 30px rgba(0, 0, 0, .075);
+  background-color: #512c71;
+  background-image: -webkit-gradient(radial, 0% 100%,100,150% -50%,100, from(hsl(241, 40%, 23%)), to(hsl(272, 44%, 31%)));
+  background-image: -webkit-radial-gradient(100% 0%, hsl(272, 44%, 31%), hsl(241, 40%, 23%));
+  background-image: -moz-radial-gradient(100% 0%, hsl(272, 44%, 31%), hsl(241, 40%, 23%));
+  background-image: -ms-radial-gradient(100% 0%, hsl(272, 44%, 31%), hsl(241, 40%, 23%));
+  background-image: radial-gradient(100% 0%, hsl(272, 44%, 31%), hsl(241, 40%, 23%));
+
+  -webkit-box-shadow: inset 0 3px 7px rgba(0, 0, 0, .2), inset 0 -3px 7px rgba(0, 0, 0, .2);
+  -moz-box-shadow: inset 0 3px 7px rgba(0,0,0,.2), inset 0 -3px 7px rgba(0,0,0,.2);
+  box-shadow: inset 0 3px 7px rgba(0, 0, 0, .2), inset 0 -3px 7px rgba(0, 0, 0, .2);
+}
+
+.make_a_call {
+padding: 15px 0;
+text-align: center;
+background-color: hsl(113, 85%, 48%);
+border-bottom: 1px solid #DDD;
+}
+.marketing {
+  text-align: center;
+  color: #5A5A5A;
+
+  .marketing-byline {
+    margin-bottom: 40px;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 1.25;
+    color: #999;
+  }
+  h1 {
+    margin: 60px 0 10px;
+    font-size: 60px;
+    font-weight: 200;
+    line-height: 1;
+    letter-spacing: -1px;
+  }
+  h2 {
+    font-weight: 200;
+    margin-bottom: 5px;
+  }
+  p {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+}
+
+.get_contact {
+  @include single-box-shadow;
+}
