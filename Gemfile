@@ -7,6 +7,9 @@ group :assets do
   gem 'uglifier', '>= 1.0.3'
   gem 'compass-rails'
 end
+group :production do
+  gem 'mysql2'
+end
 gem 'jquery-rails'
 gem "thin", ">= 1.5.0", :group => [:development, :test]
 gem "unicorn", ">= 4.3.1", :group => :production

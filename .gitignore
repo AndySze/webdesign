@@ -14,6 +14,7 @@
 /.bundle
 /vendor/bundle/
 /vendor/ruby/
+/vendor/cache/
 
 # minimal Rails specific artifacts
 db/*.sqlite3
@@ -38,6 +39,7 @@ db/*.sqlite3
 /doc/features.html
 /doc/specs.html
 /public/cache
+/public/assets
 /public/stylesheets/compiled
 /public/system/*
 /spec/tmp/*
