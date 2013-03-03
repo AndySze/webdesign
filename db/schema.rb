@@ -11,7 +11,24 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20121117121302) do
+ActiveRecord::Schema.define(:version => 20130302150653) do
+
+  create_table "homepages", :force => true do |t|
+    t.string   "site_title"
+    t.string   "logo_url"
+    t.string   "contact_info"
+    t.string   "choseus_title"
+    t.string   "choseus_image_one"
+    t.text     "choseus_one"
+    t.string   "choseus_image_two"
+    t.text     "choseus_two"
+    t.string   "choseus_image_three"
+    t.text     "choseus_three"
+    t.string   "portfolio_title"
+    t.text     "portfolio_descritpion"
+    t.datetime "created_at",            :null => false
+    t.datetime "updated_at",            :null => false
+  end
 
   create_table "roles", :force => true do |t|
     t.string   "name"
