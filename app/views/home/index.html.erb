@@ -1,4 +1,4 @@
-
+<div class="span12">
 <div class="jumbotron">
   <div class="container">
     <div class="content">
@@ -116,17 +116,11 @@
     <div class="row-fluid">
       <ul class="thumbnails example-sites">
         <li class="span7">
-        <h3>我们的观点</h3>
-        <p>这里显示博客文章。</p>
-        <p>这里显示博客文章。</p>
-        <p>这里显示博客文章。</p>
-        <p>这里显示博客文章。</p>
-        <p>这里显示博客文章。</p>
-        <p>这里显示博客文章。</p>
-        <p>这里显示博客文章。</p>
-        <p>这里显示博客文章。</p>
-        <p>这里显示博客文章。</p>
-        <p>这里显示博客文章。</p>
+        <h3 style="display:inline">我们的观点</h3>
+        <%= link_to "查看更多",posts_path %>
+        <% Post.order("created_at DESC").limit(5).each do |post| %>
+          <h5><%= link_to post.title , post%></h5>
+        <% end %>
         </li>
         <li class="span5 get_contact">
         <h3>有任何技术难题请告诉我们</h3>
@@ -140,4 +134,5 @@
       </ul>
      </div>
 
+</div>
 </div>

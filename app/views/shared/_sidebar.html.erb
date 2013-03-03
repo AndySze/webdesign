@@ -1,0 +1,22 @@
+  <div class="box">
+    <div class="header">
+      文章分类
+    </div>
+    <div class="inner">
+      <% Category.all.each do |category| %>
+        <%= link_to category.title + "(#{category.posts.count})", category,class: 'btn btn-info' %>
+      <% end %>
+    </div>
+  </div>
+
+  <div class="box">
+    <div class="header">
+      更多随机文章
+    </div>
+    <div class="inner">
+      <% Post.all.sample(5).each do |post| %>
+        <p><%= link_to post.title, post %></p>
+      <% end %>
+    </div>
+  </div>
+

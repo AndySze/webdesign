@@ -17,10 +17,16 @@
       <li>
       <%= link_to 'Admin', users_path %>
       </li>
+      <li>
+      <%= link_to '新建文章', new_post_path %>
+      </li>
     <% end %>
   <% else %>
     <li>
     <%= link_to 'Sign up', new_user_registration_path %>
     </li>
   <% end %>
+    <li>
+    <%= link_to '我们的博客', posts_path %>
+    </li>
 </ul>

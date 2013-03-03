@@ -1,4 +1,10 @@
 Cunlin::Application.routes.draw do
+  resources :categories
+
+
+  resources :posts
+
+
   authenticated :user do
     root :to => 'home#index'
   end

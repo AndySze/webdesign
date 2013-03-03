@@ -1,0 +1,26 @@
+<% 
+    # seo title
+    content_for(:title) do
+      "我们的博客"
+    end
+
+%>
+
+<div class="span9">
+<h1>Listing posts</h1>
+
+<%= render @posts %>
+<br />
+
+</div >
+<div class="span3">
+  <div class="box">
+    <div class="header">
+      操作
+    </div>
+    <div class="inner">
+      <%= link_to 'New Post', new_post_path,class: "btn btn-success" %>
+    </div>
+  </div>
+  <%= render "shared/sidebar" %>
+</div>
