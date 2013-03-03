@@ -31,7 +31,7 @@ ActiveRecord::Schema.define(:version => 20130303030859) do
     t.string   "choseus_image_three"
     t.text     "choseus_three"
     t.string   "portfolio_title"
-    t.text     "portfolio_descritpion"
+    t.text     "portfolio_description"
     t.datetime "created_at",            :null => false
     t.datetime "updated_at",            :null => false
   end

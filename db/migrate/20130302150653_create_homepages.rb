@@ -12,7 +12,7 @@ class CreateHomepages < ActiveRecord::Migration
       t.string :choseus_image_three
       t.text :choseus_three
       t.string :portfolio_title
-      t.text :portfolio_descritpion
+      t.text :portfolio_description
 
       t.timestamps
     end

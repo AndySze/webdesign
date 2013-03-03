@@ -14,6 +14,7 @@
 
 </div >
 <div class="span3">
+  <% if can? :create,@posts %>
   <div class="box">
     <div class="header">
       操作
@@ -22,5 +23,6 @@
       <%= link_to 'New Post', new_post_path,class: "btn btn-success" %>
     </div>
   </div>
+<% end %>
   <%= render "shared/sidebar" %>
 </div>
