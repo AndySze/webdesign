@@ -1,6 +1,7 @@
   <div>
     <h3><%= link_to post.title,post %></h3>
-    <p class="content"><%= post.content %></p>
+    <b>所属分类:</b>
     <%= link_to post.category.title,post.category %>
+    <p class="content"><%= post.content %></p>
   </div>
 

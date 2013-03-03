@@ -5,10 +5,12 @@
     <%= f.input :title, :label => '标题' do %>
       <%= f.text_field :title, :class => :span6 %>
     <% end %>
-    <%= f.input :content,:label => "内容",:input_html => {:rows => 10, :style => 'width: 98%;'} %>
-    <%= f.input :image %>
-    <label class="string optional control-label">文章分类</label>
-    <%= collection_select :post,:category_id,Category.all,:id,:title,:prompt => true %>
+    <%= f.input :content,:label => "内容",class:"wysihtml5",:input_html => {:rows => 20, :style => 'width: 98%;'} %>
+    <%= f.input :image, :label => "文章图片" do %>
+      <%= f.text_field :image, :class => :span6 %>
+      <%= f.hint "图片用于显示在列表的小图片。" %>
+    <% end %>
+    <%= f.input :category_id,:collection => Category.all,:label => "分类目录" %>
   </div>
 
   <div class="">
@@ -16,3 +18,7 @@
     <%= link_to "取消", posts_path %>
   </div>
 <% end %>
+
+<script type="text/javascript">
+	$('#post_content').wysihtml5();
+</script>

@@ -1,10 +1,20 @@
 <p id="notice"><%= notice %></p>
 
+<div class="span9">
 <p>
-  <b>Title:</b>
+  <b>分类目录:</b>
   <%= @category.title %>
 </p>
 
-
 <%= link_to 'Edit', edit_category_path(@category) %> |
 <%= link_to 'Back', categories_path %>
+
+<div class="">
+  <%= render  :partial => "posts/post", collection: @posts %>
+</div>
+
+</div>
+
+<div class="span3">
+  <%= render "shared/sidebar" %>
+</div>

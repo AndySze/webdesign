@@ -5,4 +5,10 @@ class ApplicationController < ActionController::Base
     redirect_to root_path, :alert => exception.message
   end
 
+  before_filter :get_settings
+
+  def get_settings
+    @homesettings = Homepage.first
+  end
+
 end
