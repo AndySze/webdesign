@@ -1,4 +1,5 @@
 Cunlin::Application.routes.draw do
+
   resources :categories
 
 
@@ -15,10 +16,10 @@ Cunlin::Application.routes.draw do
   namespace :admin do
 
     resources :users
+    get "homepages"  => "homepages#index"
+    resource :homepages
 
-    resource :site_settings
-
-    root :to => 'welcome_admin#index'
+    root :to => 'home#index'
   end
 
 end

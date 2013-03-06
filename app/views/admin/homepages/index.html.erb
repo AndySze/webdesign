@@ -1,0 +1,23 @@
+<div class="span3">
+</div>
+
+<div class="span9">
+<h1>Admin::Settings#index</h1>
+<p>Find me in app/views/admin/settings/index.html.erb</p>
+<%= simple_form_for @settings, :url => admin_homepages_path(@settings) do |f| %>
+  <%= f.input :site_title %>
+  <%= f.input :logo_url %>
+  <%= f.input :contact_info %>
+  <%= f.input :choseus_title %>
+  <%= f.input :choseus_image_one %>
+  <%= f.input :choseus_one %>
+  <%= f.input :choseus_image_two %>
+  <%= f.input :choseus_two %>
+  <%= f.input :choseus_image_three %>
+  <%= f.input :choseus_three %>
+  <%= f.input :portfolio_title %>
+  <%= f.input :portfolio_description %>
+
+  <%= f.button :submit %>
+<% end %>
+</div>
